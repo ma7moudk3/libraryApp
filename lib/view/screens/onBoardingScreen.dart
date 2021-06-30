@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:library_app/core/AppViewModel.dart';
+import 'package:library_app/core/controllerViewModel.dart';
 import 'package:library_app/view/screens/homeScreen.dart';
 import 'package:library_app/view/widgets/introScreenonBoarding.dart';
 import 'package:library_app/view/widgets/introduction.dart';
@@ -38,7 +40,7 @@ class OnBoardingScreen extends StatelessWidget {
         Navigator.pushReplacement(
           context,
           MaterialPageRoute(
-            builder: (context) => HomeScreen(),
+            builder: (context) => ControllerViewModel(),
           ), //MaterialPageRoute
         );
       },
